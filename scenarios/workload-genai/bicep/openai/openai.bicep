@@ -24,8 +24,8 @@ param publicNetworkAccess string = 'Disabled'
 @description('The model name to be deployed. The model name can be found in the OpenAI portal.')
 param modelName string = 'gpt-35-turbo'
 
-@description('The model version to be deployed. At the time of writing this is the latest version is eastus2.')
-param modelVersion string = '0613'
+@description('The model version to be deployed. Using the latest supported version.')
+param modelVersion string = '1106'
 
 resource cognitiveServices 'Microsoft.CognitiveServices/accounts@2023-10-01-preview' = {
   name: name
